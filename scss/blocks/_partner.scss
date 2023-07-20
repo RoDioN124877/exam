@@ -2,6 +2,7 @@
     width: 900px;
     margin: auto;
     margin-top: 100px;
+    padding-bottom: 60px;
 
     h2{
         @include font_settings (400,20px,normal);
@@ -20,12 +21,13 @@
                 line-height: 25px; /* 135% */
                 color: $black_c;
                 font-family: $mane_font;
+                margin-top: 16px;
             }
         }
 
     }
     .partner__footer{
-        margin-top: 65px;
+        margin-top: 63px;
         a{
             position: relative;
             width: 88px;

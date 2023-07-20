@@ -176,33 +176,16 @@ a {
   text-decoration: none;
 }
 
-.shop__block:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.catalog__block:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.partner__block:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
-.sc:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: 0.5s;
-}
-
 header {
   background: #BDD5FF;
   width: 100%;
   margin-top: 1rem;
+}
+
+@media (max-width: 420px) {
+  header {
+    padding-bottom: 50px;
+  }
 }
 
 nav {
@@ -609,6 +592,7 @@ nav ul li a {
   width: 900px;
   margin: auto;
   margin-top: 100px;
+  padding-bottom: 60px;
 }
 
 .partner h2 {
@@ -639,10 +623,11 @@ nav ul li a {
   /* 135% */
   color: black;
   font-family: "Roboto", sans-serif;
+  margin-top: 16px;
 }
 
 .partner .partner__footer {
-  margin-top: 65px;
+  margin-top: 63px;
 }
 
 .partner .partner__footer a {
@@ -802,9 +787,14 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-top: 90px;
     padding-bottom: 100px;
     gap: 50px;
+  }
+  .pay__info .pay__info__betwin__block {
+    display: flex;
+    flex-direction: column;
   }
   .pay__info .pay__info__betwin__block .pay__info__title p {
     color: #FFF;
@@ -823,7 +813,7 @@ nav ul li a {
     line-height: normal;
     line-height: 45px;
     /* 218.75% */
-    width: 250px;
+    width: 228px;
     margin-top: 7px;
     margin-bottom: 20px;
   }
@@ -912,7 +902,8 @@ nav ul li a {
 @media (max-width: 420px) {
   .inspired {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-top: 90px;
     padding-bottom: 100px;
     gap: 50px;
@@ -1679,6 +1670,7 @@ footer .footer__bottom ul li a {
   }
   footer .footer__conteiner .col {
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 15px;
@@ -1724,6 +1716,7 @@ footer .footer__bottom ul li a {
   footer .footer__bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     margin-top: 120px;
   }

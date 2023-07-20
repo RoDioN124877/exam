@@ -3,3 +3,8 @@ header{
     width: 100%;
     margin-top: 1rem;
 }
+@media(max-width: 420px){
+    header{
+        padding-bottom: 50px;
+    }
+}

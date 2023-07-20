@@ -50,10 +50,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         padding-top: 90px;
         padding-bottom: 100px;
         gap: 50px;
         .pay__info__betwin__block{
+            display: flex;
+            flex-direction: column;
             .pay__info__title{
                 p{
                     color: #FFF;
@@ -66,7 +69,7 @@
                     font-family: $mane_font;
                     @include font_settings(400,28px,normal);
                     line-height: 45px; /* 218.75% */
-                    width: 250px;
+                    width: 228px;
                     margin-top: 7px;
                     margin-bottom: 20px;
                 }
