@@ -1,0 +1,97 @@
+.pay__info{
+    background-color: $black_c;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    gap: 50px;
+    .pay__info__betwin__block{
+        .pay__info__title{
+            p{
+                color: #FFF;
+                font-family: $mane_font;
+                @include font_settings(400,16px,normal);
+                line-height: 35px; /* 218.75% */
+            }
+            h2{
+                color: #FFF;
+                font-family: $mane_font;
+                @include font_settings(400,48px,normal);
+                line-height: 55px; /* 218.75% */
+                width: 416px;
+                margin-top: 7px;
+                margin-bottom: 20px;
+            }
+            h5{
+                color: #FFF;
+                font-family: $mane_font;
+                @include font_settings(400,20px,normal);
+                line-height: 30px; /* 218.75% */
+                width: 424px;
+            }
+        }
+        button{
+            color: #171717;
+            font-family: $mane_font;
+            @include font_settings(400,16px,normal);
+            line-height: 20px; /* 218.75% */
+            width: 125px;
+            height: 39px;
+            background: #FFB3C7;
+            border: 0;
+            margin-top: 33px;
+        }
+    }
+}
+
+@media(max-width: 420px){
+    .pay__info{
+        background-color: $black_c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        gap: 50px;
+        .pay__info__betwin__block{
+            .pay__info__title{
+                p{
+                    color: #FFF;
+                    font-family: $mane_font;
+                    @include font_settings(400,16px,normal);
+                    line-height: 35px; /* 218.75% */
+                }
+                h2{
+                    color: #FFF;
+                    font-family: $mane_font;
+                    @include font_settings(400,28px,normal);
+                    line-height: 45px; /* 218.75% */
+                    width: 250px;
+                    margin-top: 7px;
+                    margin-bottom: 20px;
+                }
+                h5{
+                    color: #FFF;
+                    font-family: $mane_font;
+                    @include font_settings(400,20px,normal);
+                    line-height: 30px; /* 218.75% */
+                    width: 250px;
+                }
+            }
+            button{
+                color: #171717;
+                font-family: $mane_font;
+                @include font_settings(400,16px,normal);
+                line-height: 20px; /* 218.75% */
+                width: 125px;
+                height: 39px;
+                background: #FFB3C7;
+                border: 0;
+                margin-top: 33px;
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}

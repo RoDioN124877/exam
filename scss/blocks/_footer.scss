@@ -1,0 +1,155 @@
+footer{
+    background-color: #17120F;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    .footer__conteiner{
+        width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .col{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            .usa{
+                text-align: center;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../img/footer/usa.svg);
+                    left:27px;
+                    bottom:0px;
+                }
+            }
+            .multimedia__conteiner{
+                display: flex;
+                gap: 16px;
+                margin-top: 55px;
+                a{
+                    border-radius: 5px;
+                    background: #FFF;
+                    width: 40px;
+                    height: 18px;
+                    flex-shrink: 0;
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            a{
+                color: white;
+                @include font_settings(400,16px,normal);
+                line-height: 16.8px; /* 105% */
+                letter-spacing: 0.048px;
+            }
+        }
+    }
+    .footer__bottom{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 120px;
+        p{
+            color: white;
+            @include font_settings(400,10px,normal);
+            letter-spacing: 0.048px;
+            width: 690px;
+        }
+        ul{
+            display: flex;
+            gap: 24px;
+            li{
+                a{
+                    color: white;
+                    @include font_settings(400,10px,normal);
+                    letter-spacing: 0.048px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 420px){
+    footer{
+        background-color: #17120F;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        .footer__conteiner{
+            width: 300px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            justify-content: space-between;
+            .col{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+                .usa{
+                    text-align: center;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../img/footer/usa.svg);
+                        left:27px;
+                        bottom:0px;
+                    }
+                }
+                .multimedia__conteiner{
+                    display: flex;
+                    gap: 16px;
+                    margin-top: 55px;
+                    a{
+                        border-radius: 5px;
+                        background: #FFF;
+                        width: 40px;
+                        height: 18px;
+                        flex-shrink: 0;
+                        display: block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                a{
+                    color: white;
+                    @include font_settings(400,16px,normal);
+                    line-height: 16.8px; /* 105% */
+                    letter-spacing: 0.048px;
+                }
+            }
+        }
+        .footer__bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 120px;
+            p{
+                color: white;
+                @include font_settings(400,10px,normal);
+                letter-spacing: 0.048px;
+                width: 200px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                li{
+                    a{
+                        color: white;
+                        @include font_settings(400,10px,normal);
+                        letter-spacing: 0.048px;
+                    }
+                }
+            }
+        }
+    }
+}

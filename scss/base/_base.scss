@@ -1,0 +1,71 @@
+@mixin font_settings ($fw,$fs,$lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+.pod_cherk {
+	position: relative;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.pod_cherk:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #000000;
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.pod_cherk:hover:after,
+.pod_cherk:focus:after {
+	width: 100%; 
+}
+.pod_cherk_w {
+	position: relative;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.pod_cherk_w:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #ffffff;
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.pod_cherk_w:hover:after,
+.pod_cherk_w:focus:after {
+	width: 100%; 
+}
+.pod_cherk_b {
+	position: relative;
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+
+}
+.pod_cherk_b:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #487B94;
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.pod_cherk_b:hover:after,
+.pod_cherk_b:focus:after {
+	width: 100%; 
+}

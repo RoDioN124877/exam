@@ -1,0 +1,117 @@
+.features{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 900px;
+    margin: auto;
+    .features__text__conteiner{
+        margin-bottom: 90px;
+        h2{
+            @include font_settings (400,32px,normal);
+            color: $black_c;
+            margin-bottom: 17px
+        }
+        p{
+            @include font_settings (400,20px,normal);
+            color: $black_c;
+            width: 736px;
+        }
+    }
+    .name{
+        @include font_settings (400,16px,normal);
+        color: $black_c;
+    }
+    .features__block{
+        display: flex;
+        gap: 50px;
+        .features__block__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3{
+                @include font_settings (400,32px,normal);
+                color: $black_c;
+            }
+            p{
+                margin-top: 17px;
+                @include font_settings (400,20px,normal);
+                color: $black_c;
+                margin-bottom: 37px;
+            }
+            a{
+                position: relative;
+                width: 88px;
+                color: $a_color;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    right: -30px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-image: url('../img/header/left.svg');
+                }
+            }
+        }
+    }
+}
+@media(max-width: 420px){
+    .features{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 300px;
+        margin: auto;
+        .features__text__conteiner{
+            margin-bottom: 90px;
+            h2{
+                @include font_settings (400,32px,normal);
+                color: $black_c;
+                margin-bottom: 17px
+            }
+            p{
+                @include font_settings (400,20px,normal);
+                color: $black_c;
+                width: 200px;
+            }
+        }
+        .name{
+            @include font_settings (400,16px,normal);
+            color: $black_c;
+        }
+        .features__block{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .features__block__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3{
+                    @include font_settings (400,32px,normal);
+                    color: $black_c;
+                }
+                p{
+                    margin-top: 17px;
+                    @include font_settings (400,20px,normal);
+                    color: $black_c;
+                    margin-bottom: 37px;
+                }
+                a{
+                    position: relative;
+                    width: 88px;
+                    color: $a_color;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        right: -30px;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-image: url('../img/header/left.svg');
+                    }
+                }
+            }
+        }
+    }
+}

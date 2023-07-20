@@ -1,0 +1,109 @@
+.partner{
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
+
+    h2{
+        @include font_settings (400,20px,normal);
+        line-height: 27px; /* 135% */
+        color: $black_c;
+        margin-bottom: 25px;
+        font-family: $mane_font;
+    }
+    .partner__conteiner{
+        display: flex;
+        justify-content: space-between;
+        .partner__block{
+            width: 423px;
+            p{
+                @include font_settings (400,16px,normal);
+                line-height: 25px; /* 135% */
+                color: $black_c;
+                font-family: $mane_font;
+            }
+        }
+
+    }
+    .partner__footer{
+        margin-top: 65px;
+        a{
+            position: relative;
+            width: 88px;
+            color: $a_color;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                right: -30px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-image: url('../img/header/left.svg');
+            }
+        }
+        p{
+            @include font_settings (400,12px,normal);
+            line-height: 25px; /* 135% */
+            color: $black_c;
+            font-family: $mane_font;
+        }
+    }
+}
+@media(max-width: 420px){
+    .partner{
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+    
+        h2{
+            @include font_settings (400,20px,normal);
+            line-height: 27px; /* 135% */
+            color: $black_c;
+            margin-bottom: 25px;
+            font-family: $mane_font;
+        }
+        .partner__conteiner{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .partner__block{
+                text-align: center;
+                width: 200px;
+                img{
+                    width: 200px;
+                }
+                p{
+                    @include font_settings (400,16px,normal);
+                    line-height: 25px; /* 135% */
+                    color: $black_c;
+                    font-family: $mane_font;
+                }
+            }
+    
+        }
+        .partner__footer{
+            margin-top: 65px;
+            a{
+                position: relative;
+                width: 88px;
+                color: $a_color;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    right: -30px;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-image: url('../img/header/left.svg');
+                }
+            }
+            p{
+                @include font_settings (400,12px,normal);
+                line-height: 25px; /* 135% */
+                color: $black_c;
+                font-family: $mane_font;
+            }
+        }
+    }
+}

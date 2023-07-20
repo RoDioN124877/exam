@@ -1,0 +1,104 @@
+.save{
+    background-color: #FFE6CC;
+    .save__conteiner{
+        margin: auto;
+        width: 900px;
+        display: flex;
+        align-items: center;
+        padding: 64px 0px;
+        .save__betwin__block{
+            margin-right: 80px;
+            .save__title{
+                h2{
+                    color: $black_c;
+                    @include font_settings(400,48px,normal);
+                    line-height: 55px; /* 114.583% */
+                    width: 420px;
+                }
+                h5{
+                    color: #171717;
+                    @include font_settings(400,20px,normal);
+                    line-height: 30px; /* 114.583% */
+                    width: 400px;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            .button__conteiner{
+                .brwser{
+                    color: #ffffff;
+                    @include font_settings(400,16px,normal); 
+                    border: 1px solid #17120F;
+                    background: #17120F;
+                    width: 215px;
+                    height: 50px;
+                    margin-right: 25px;
+                }
+                .app{
+                    color: $black_c ;
+                    @include font_settings(400,16px,normal); 
+                    border: 1px solid #D1D0CE;
+                    background: #FFF;
+                    width: 138px;
+                    height: 50px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 420px){
+    .save{
+        background-color: #FFE6CC;
+        .save__conteiner{
+            margin: auto;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            padding: 64px 0px;
+            .save__betwin__block{
+                margin-right: 80px;
+                .save__title{
+                    h2{
+                        color: $black_c;
+                        @include font_settings(400,28px,normal);
+                        line-height: 55px; /* 114.583% */
+                        width: 200px;
+                    }
+                    h5{
+                        color: #171717;
+                        @include font_settings(400,20px,normal);
+                        line-height: 30px; /* 114.583% */
+                        width: 200px;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .button__conteiner{
+                    .brwser{
+                        color: #ffffff;
+                        @include font_settings(400,16px,normal); 
+                        border: 1px solid #17120F;
+                        background: #17120F;
+                        width: 215px;
+                        height: 50px;
+                        margin-right: 0;
+                        margin-bottom: 25px;
+                    }
+                    .app{
+                        color: $black_c ;
+                        @include font_settings(400,16px,normal); 
+                        border: 1px solid #D1D0CE;
+                        background: #FFF;
+                        width: 138px;
+                        height: 50px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+        img{
+            display: none;
+        }
+    }
+}

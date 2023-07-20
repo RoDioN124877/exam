@@ -1,0 +1,59 @@
+.advantages{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    .block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h6{
+            @include font_settings(400,16px,normal);
+            font-family: $mane_font;
+            color: $black_c;
+            line-height: 25px; /* 156.25% */
+            margin-top: 16px;
+            margin-bottom: 6px
+        }
+        p{
+            @include font_settings(400,16px,normal);
+            font-family: $mane_font;
+            color: $black_c;
+            line-height: 25px; /* 156.25% */
+            width: 260px;
+        }
+    }
+}
+@media(max-width: 420px){
+    .advantages{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        .block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h6{
+                @include font_settings(400,16px,normal);
+                font-family: $mane_font;
+                color: $black_c;
+                line-height: 25px; /* 156.25% */
+                margin-top: 16px;
+                margin-bottom: 6px
+            }
+            p{
+                @include font_settings(400,16px,normal);
+                font-family: $mane_font;
+                color: $black_c;
+                line-height: 25px; /* 156.25% */
+                width: 260px;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 21px;
+    .header__meny{
+        display: flex;
+        gap: 24px;
+    }
+    .header__reg{
+        display: flex;
+        gap: 48px;
+        .sign__buton{
+            color: white;
+        }
+    }
+    ul{
+        li{
+            
+            a{
+                color:$black_c;
+                font-family: $mane_font;
+            }
+        }
+    }
+}
+
+@media(max-width: 420px){
+    nav{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        padding-top: 21px;
+        gap: 50px;
+        .header__meny{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .header__reg{
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            .sign__buton{
+                color: white;
+            }
+        }
+        ul{
+            li{
+                &:hover{
+                    opacity: 0.8;
+                    transition: 0.2s;
+                }
+                a{
+                    color:$black_c;
+                    font-family: $mane_font;
+                }
+            }
+        }
+    }
+}
